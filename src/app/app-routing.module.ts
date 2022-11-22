@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { IndexComponent } from './components/index/index.component';
 import { Page404Component } from './components/page404/page404.component';
 
 const routes: Routes = [
   {path: '', component:IndexComponent},
+  {path:'experiencia', component:ExperienciaComponent},
   {path:'**', component:Page404Component},
 
 ];
