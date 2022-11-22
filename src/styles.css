@@ -1,1 +1,185 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Bodoni Condensed', 'Roboto', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{ list-style: none;}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Condensed', 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.bg-darkblue{
+    background-color:rgb(0, 0, 0);
+}
+
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+
+i.fa-brands.fa-instagram.text-white:hover{
+    --bs-text-opacity: 1;
+    color: rgb(255, 153, 0)!important;
+}
+
+.ig.footer.btn.btn-outline-light.btn-floating.m-1.btn-outline-light {
+    --bs-btn-hover-color: rgb(255, 153, 0);
+    --bs-btn-hover-bg: rgb(41, 41, 41);
+    --bs-btn-hover-border-color: rgb(255, 153, 0);
+}
+
+i.fa-brands.fa-linkedin-in.text-white:hover{
+    --bs-text-opacity: 1;
+    color: rgb(0, 174, 255)!important;
+}
+
+.lk.footer.btn.btn-outline-light.btn-floating.m-1.btn-outline-light {
+    --bs-btn-hover-color: rgb(0, 174, 255);
+    --bs-btn-hover-bg: rgb(41, 41, 41);
+    --bs-btn-hover-border-color: rgb(0, 174, 255);
+}
+
+i.fa-brands.fa-github.text-white:hover{
+    --bs-text-opacity: 1;
+    color: rgb(0, 233, 0)!important;
+}
+
+.github.footer.btn.btn-outline-light.btn-floating.m-1.btn-outline-light {
+    --bs-btn-hover-color: rgb(0, 233, 0);
+    --bs-btn-hover-bg: rgb(41, 41, 41);
+    --bs-btn-hover-border-color: rgb(0, 233, 0);
+}
+
+
+i.fa-solid.fa-user-lock.text-white:hover{
+    --bs-text-opacity: 1;
+    color: rgb(255, 0, 0)!important;
+}
+
+section.banner{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/assets/img/Iglesia-Capuchinos.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1.intro{
+    color: white;
+    font-size: 5em;
+}
+
+h2.intro{
+    color: white;
+    padding-top: 30vh;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h3.intro{
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiencia.mt-5{
+    padding: 1rem;
+}
+
+.experiencia.mt-5.container{
+    width: 100vw;
+    padding: 0;
+}
+
+.card.mb-3{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.card.mb-3.pt-3{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skills.mt-5.container{
+    padding: 0em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skills.mt-5{
+    background-color: rgb(29, 29, 29);
+    padding: 1vw;
+}
+
+.skills.mt-5 h1{
+    color: aliceblue;
+    font-size: 3em;
+}
+
+.skills h5{
+    font-size: 1.2em;
+}
+
+.skills p{
+    font-size: 0.9rem;
+}
+    
+#proyectos .container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+}
+
+#proyectos img{
+    padding: 0.5em;
+}
+
+
+

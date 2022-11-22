@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { Page404Component } from './components/page404/page404.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
     declarations: [
@@ -31,6 +32,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
         Page404Component,
         ProyectsComponent,
         AboutMeComponent,
+        BannerComponent,
     ],
     imports: [
         BrowserModule,
