@@ -6,6 +6,7 @@ import { Page404Component } from './components/page404/page404.component';
 
 const routes: Routes = [
   {path: '', component:IndexComponent},
+  {path: 'experiencia', component: ExperienciaComponent},
   {path:'**', component:Page404Component},
 
 ];

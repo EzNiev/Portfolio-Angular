@@ -1,7 +1,65 @@
 {
-    "nombre": "Gabriel Ezequiel",
-    "apellido": "Nieva",
+    "nombre": "Nieva Gabriel Ezequiel",
+    "posicion": "Desarrollador FullStack Junior",
     "edad": 24,
+    "instagram": "https://www.instagram.com/eznievv/",
+    "linkedin": "https://www.linkedin.com/in/nieva-ezequiel/",
+    "github": "https://github.com/EzNiev",
+    
+    "fotoperfil": "../assets/img/Foto_perfil.jpeg",
+    "aboutme": "En proceso de aprendizaje de programación. Tengo conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática tanto software como hardware.",
+        
+
+    "experiencias":[
+        {
+            "id": 1,
+            "logo": "../assets/img/logogade2.png",
+            "altimg": "Logo Gade",
+            "puesto": "Encargado de depósito",
+            "modalidad": "Presencial/Partime",
+            "empresa": "GADE Electricidad",
+            "inicio": "06/2016",
+            "fin": "12/2016",
+            "ubicacion": "Jesús María, Córdoba, Argentina",
+            "descripcion": "Mi primera experiencia formal de trabajo, a la cual accedí gracias a las pasantías estudiantiles y seguí trabajando hasta fin de año desarrollándome en atención al cliente y depósito, siendo este último donde trabajé más tiempo. Mis tareas eran organizar los productos, controlar ingresos y egresos, controlar el stock y mantener el lugar de trabajo en condiciones de limpieza y seguridad."
+        },
+        {
+            "id": 2,
+            "logo": "../assets/img/Logo-Servitech.png",
+            "altimg": "Logo ServiTech",
+            "puesto": "Técnico/Emprendedor",
+            "modalidad": "Presencial/Fulltime",
+            "empresa": "ServiTech Nueva",
+            "inicio": "07/2017",
+            "fin": "01/2021",
+            "ubicacion": "Córdoba, Argentina",
+            "descripcion": "Ofrecía servicio técnico de computadoras y notebooks de forma independiente. Con el tiempo obtuve conocimientos en el área, habilidades para tratar con clientes y administré mi negocio desde cero mediante mis propios medios promocionando mi trabajo por redes sociales y recomendaciones de mis propios clientes."
+        },
+        {
+            "id": 3,
+            "logo": "../assets/img/logo-apex.png",
+            "altimg": "Logo Apex",
+            "puesto": "Asesor atención al cliente/Mentor",
+            "modalidad": "Semipresencial/Jornada Parcial",
+            "empresa": "Apex América BPO",
+            "inicio": "12/2020",
+            "fin": "11/2021",
+            "ubicacion": "Córdoba, Córdoba, Argentina",
+            "descripcion": "Asesor telefónico en una cuenta de retención en una prestadora de servicios de telecomunicaciones. Desde Junio también trabajé como Mentor (auxiliar de capacitaciones) en los procesos de capacitaciones de nuevos ingresos a la empresa, ayudando en todo lo que corresponda a mejorar el proceso de aprendizaje brindando material multimedia y también mediante asesoramiento técnico cuando corresponda."
+        },
+        {
+            "id": 4,
+            "logo": "../assets/img/Maiden.jpg",
+            "altimg": "Logo Maiden",
+            "puesto": "Encargado de proveeduría",
+            "modalidad": "Presencial/Fulltime",
+            "empresa": "MAIDEN Eventos",
+            "inicio": "12/2021",
+            "fin": "11/2022",
+            "ubicacion": "Córdoba, Córdoba, Argentina",
+            "descripcion": "Actualmente soy encargado de la proveeduría, la misma funciona como Bar, Cantina y Salón de eventos. Entre mis tareas se encuentran como principales: Encargado de RRHH(Confección de cronogramas, redacción de informes, control de ingreso y egreso de personal, auxiliar de reclutamiento), Encargado de compras/deposito (Pedidos a proveedores, control de ingreso y egreso de mercadería, control de stock de mercadería en salón y depósito), Encargado de caja (Apertura, cierre y arqueo de caja, redacción balances de rendiciones semanales y mensuales, y redacción balance general), Organizador de eventos (Encargado de reservas del salón y coordinación de servicios complementarios al evento)."
+        }
+    ],
 
     "estudios": [
         {
@@ -35,6 +93,17 @@
             "periodo": "2019 - actual",
             "descripción": "Este año retomé mis estudios, terminando materias de segundo año, ya que tengo intenciones de orientarme en Inteligencia Artificial y Ciencia de Datos. Entre los conocimientos que adquirí en la carrera hasta ahora destaco Python, aplicado en Algoritmos y Estructura de Datos.",
             "imagen:": "../img/logo-utn.jfif"
+        }
+    ],
+
+    "skills":[
+        {
+
+        }
+    ],
+    "proyects":[
+        {
+
         }
     ]
 }

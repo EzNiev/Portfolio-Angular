@@ -2,13 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <img src="/assets/img/Foto_perfil.jpeg" alt="Foto de Perfil" class="rounded-circle img-fluid w-20 foto-perfil">
+        <img [src]="fotoperfil" alt="Foto de Perfil" class="rounded-circle img-fluid w-20 foto-perfil">
       </div>
       <div class="col-9 mt-5">
         <h1 class="text-center">Acerca de mí</h1>
-        <h5 class="mt-3 text-center">Full Stack Developer Junior. <br>En proceso de aprendizaje de programación. Tengo
-          conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática
-          tanto software como hardware.</h5>
+        <h5 class="mt-3 text-center">{{posicion}}</h5>
+        <h5 class="mt-3 text-center">{{aboutme}}</h5>
       </div>
     </div>
   </div>

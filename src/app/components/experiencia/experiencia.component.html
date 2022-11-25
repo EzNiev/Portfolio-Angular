@@ -2,137 +2,23 @@
     <div class="container">
         <h1 class="text-center">Experiencia</h1>
 
-        <div class="card mb-3" style="max-width: 90vw;">
-            <div class="row g-0">
-                <div class="col-md-2">
-                    <img src="/assets/img/logogade2.png" class="img-fluid rounded-start" alt="Logo de GADE">
-                </div>
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Titulo del puesto: </strong>Encargado de depósito</h5>
-                        <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong>Presencial</h6>
-                        <h6 class="card-title t-14 t-normal"><strong>Empresa: </strong>GADE Electricidad</h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>06/2016 - 12/2016
-                        </h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>Jesús María,
-                            Córdoba,
-                            Argentina</h6>
-                        <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium">
-                            <strong>Descripción del
-                                puesto: </strong><br>Mi primera experiencia formal de trabajo, a la cual accedí gracias
-                            a las
-                            pasantías estudiantiles y seguí
-                            trabajando hasta fin de año, desarrollándome en atención al cliente y depósito, siendo este
-                            último donde
-                            trabajé más tiempo. Mis tareas eran organizar los productos, controlar ingresos y egresos,
-                            controlar el
-                            stock
-                            y mantener el lugar de trabajo en condiciones de limpieza y seguridad.
-                        </p>
+        <div class="row" *ngFor="let experiencia of experienciasa">
+            <div class="card mb-3" style="max-width: 90vw;">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img [src]= "experiencia.logo" class="img-fluid rounded-start" [alt]= "experiencia.logo">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Titulo del puesto: </strong>{{experiencia.puesto}}</h5>
+                            <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong>{{experiencia.modalidad}}</h6>
+                            <h6 class="card-title t-14 t-normal"><strong>Empresa: </strong>{{experiencia.empresa}}</h6>
+                            <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>{{experiencia.inicio}} / {{experiencia.fin}}</h6>
+                            <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>{{experiencia.ubicacion}}</h6>
+                            <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium"><strong>Descripción del puesto: </strong><br>{{experiencia.descripcion}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 90vw;">
-            <div class="row g-0">
-                <div class="col-md-2">
-                    <img src="/assets/img/Logo-Servitech.png" class="img-fluid rounded-start" alt="Logo Servitech">
-                </div>
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Titulo del puesto: </strong>Técnico/Emprendedor</h5>
-                        <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong>Fulltime</h6>
-                        <h6 class="card-title t-14 t-normal"><strong>Empresa: </strong>ServiTech Nueva</h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>07/2017 - 01/2021
-                        </h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>Córdoba,
-                            Argentina</h6>
-                        <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium">
-                            <strong>Descripción del
-                                puesto: </strong><br>Ofrecía servicio técnico de computadoras y notebooks de forma
-                            independiente. Con
-                            el tiempo obtuve
-                            conocimientos en el área, habilidades para tratar con clientes y administré mi negocio desde
-                            cero
-                            mediante
-                            mis propios medios promocionando mi trabajo por redes sociales y recomendaciones de mis
-                            propios
-                            clientes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 90vw;">
-            <div class="row g-0">
-                <div class="col-md-2">
-                    <img src="/assets/img/logo-apex.png" class="img-fluid rounded-start" alt="Logo Apex">
-                </div>
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Titulo del puesto: </strong>Asesor/Mentor</h5>
-                        <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong>Jornada Parcial -
-                            Semipresencial</h6>
-                        <h6 class="card-title t-14 t-normal"><strong>Empresa: </strong>Apex América BPO</h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>12/2020 - 11/2021
-                        </h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>Córdoba,
-                            Argentina</h6>
-                        <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium">
-                            <strong>Descripción del
-                                puesto: </strong><br>Asesor telefónico en una cuenta de retención en una prestadora de
-                            servicios de
-                            telecomunicaciones. Desde
-                            Junio también trabajé como Mentor (auxiliar de capacitaciones) en los procesos de
-                            capacitaciones de
-                            nuevos
-                            ingresos a la empresa, ayudando en todo lo que corresponda a mejorar el proceso de
-                            aprendizaje brindando
-                            material multimedia y también mediante asesoramiento técnico cuando corresponda.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 90vw;">
-            <div class="row g-0">
-                <div class="col-md-2">
-                    <img src="/assets/img/Maiden.jpg" class="img-fluid rounded-start" alt="Logo Maiden">
-                </div>
-                <div class="col-md-10">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Titulo del puesto: </strong> Encargado de proveeduría</h5>
-                        <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong> Fulltime</h6>
-                        <h6 class="card-title t-14 t-normal"><strong>Empresa: </strong>MAIDEN Eventos</h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>12/2021 - Actual
-                        </h6>
-                        <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>Córdoba,
-                            Argentina</h6>
-                        <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium">
-                            <strong>Descripción del
-                                puesto: </strong><br>Actualmente soy encargado de la proveeduría, la misma funciona como
-                            Bar, Cantina
-                            y Salón de eventos.
-                            Entre mis tareas se encuentran como principales:
-                            <br> • Encargado de RRHH: Confección de cronogramas, redacción de informes, control de
-                            ingreso y egreso
-                            de
-                            personal, auxiliar de reclutamiento.
-                            <br>• Encargado de compras/deposito: Pedidos a proveedores, control de ingreso y egreso de
-                            mercadería,
-                            control de stock de mercadería en salón y depósito.
-                            <br>• Encargado de caja: Apertura, cierre y arqueo de caja, redacción balances de
-                            rendiciones semanales
-                            y
-                            mensuales, y redacción balance general.
-                            <br>• Organizador de eventos: Encargado de reservas del salón y coordinación de servicios
-                            complementarios
-                            al evento.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
