@@ -8,6 +8,7 @@
     
     "fotoperfil": "../assets/img/Foto_perfil.jpeg",
     "aboutme": "En proceso de aprendizaje de programación. Tengo conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática tanto software como hardware.",
+    "rutacv": "../assets/files/CVNievaEzequiel_2022.pdf",
         
 
     "experiencias":[
@@ -185,7 +186,28 @@
     ],
     "proyects":[
         {
-
+            "id": 1,
+            "titulo": "",
+            "imagen": "",
+            "alt": "",
+            "descripcion": "",
+            "link": ""
+        },
+        {
+            "id": 2,
+            "titulo": "",
+            "imagen": "",
+            "alt": "",
+            "descripcion": "",
+            "link": ""
+        },
+        {
+            "id": 3,
+            "titulo": "",
+            "imagen": "",
+            "alt": "",
+            "descripcion": "",
+            "link": ""
         }
     ]
 }

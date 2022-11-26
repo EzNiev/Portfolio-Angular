@@ -11,6 +11,7 @@ export class AboutMeComponent implements OnInit {
   posicion: string = '';
   aboutme: string = '';
   fotoperfil: any = [];
+  rutacv: string = '';
 
   constructor(private datos: DatosService) { }
 
@@ -19,6 +20,7 @@ export class AboutMeComponent implements OnInit {
       this.posicion = data.posicion;
       this.aboutme = data.aboutme;
       this.fotoperfil = data.fotoperfil;
+      this.rutacv = data.rutacv;
     })
   }
 }
