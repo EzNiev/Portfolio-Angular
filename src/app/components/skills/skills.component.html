@@ -1,144 +1,37 @@
 <section id="skills" class="skills mt-5">
     <div class="container">
         <h1 class="text-center">Hard & Soft Skills</h1>
+        <!-- Creamos el ngfor para traer el array con la data de los skills -->
         <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;">
+            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;" *ngFor="let skill of skills">
+                <!-- Inicio de componente carta -->
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="/assets/img/html5-logo.png" class="img-fluid rounded-start" alt="Logo HTML5"
+                        <!-- Usamos data binding para traer el src y el alt de nuestra imagen -->
+                        <img [src]="skill.imagen" class="img-fluid rounded-start" [alt]="skill.alt"
                             style="max-width: 7em; padding: 2%;">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">HTML</h5>
+                            <h5 class="card-title">{{skill.titulo}}</h5>
                             <p class="card-text">
-                                Mi conocimiento en HTML es básico. Pueden comprobarlo viendo ésta página.
+                                {{skill.descripcion}}
                             </p>
                             <br>
-                            <div class="progress" style="height: 3em;">
+                            <div id="progressbar" class="progress" style="height: 3em">
+                                <!-- Para la progress bar tuve que crear dos datos en cada elemento del array
+                                    Uno para el número que va en la barra y otro para la "Cantidad de relleno" de la barra
+                                    por eso en la etiqueta del div en donde pone [style] utilizo databinding para completar ese dato
+                                    no se si es la mejor forma pero es lo que pude arreglar y me funcionó por ahora-->
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                     aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%">50%</div>
+                                    aria-valuemax="100" [style]="skill.estiloporc">
+                                    {{skill.porcentaje}}%</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="/assets/img/Logo-css.png" class="img-fluid rounded-start" alt="Logo HTML5"
-                            style="max-width: 7em;">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS </h5>
-                            <p class="card-text">
-                                Mi conocimiento en CSS es básico. Pueden comprobarlo viendo ésta página.
-                            </p>
-                            <br>
-                            <div class="progress" style="height: 3em;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%">50%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="/assets/img/js-logo.png" class="img-fluid rounded-start" alt="Logo HTML5"
-                            style="max-width: 7em;">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">
-                                Aprendí lo básico de JavaScript, utilizandolo mediante el POO.
-                            </p>
-                            <br>
-                            <div class="progress" style="height: 3em;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%">50%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="/assets/img/logo-angular.png" class="img-fluid rounded-start" alt="Logo HTML5"
-                            style="max-width: 7em;">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Angular JS</h5>
-                            <p class="card-text">
-                                Angular es una tecnología que tengo pendiente aprender en el curso de #YoProgramo
-                            </p>
-                            <br>
-                            <div class="progress" style="height: 3em;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0%; min-width: 5%;">0%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="/assets/img/logo-bootstrap.png" class="img-fluid rounded-start" alt="Logo HTML5"
-                            style="max-width: 7em;">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">BootStrap</h5>
-                            <p class="card-text">
-                                Bootstrap es una tecnología que me ayuda mucho a encarar el armado de mi portfolio.
-                            </p>
-                            <br>
-                            <div class="progress" style="height: 3em;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%">50%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="max-width: 25em; padding: 1em; margin: 1em;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="/assets/img/logo-vsc.png" class="img-fluid rounded-start" alt="Logo HTML5"
-                            style="max-width: 7em;">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Visual Studio Code</h5>
-                            <p class="card-text">
-                                El primer editor de texto que usé. A mi preferencia el más cómodo y amigable para los
-                                que estamos
-                                empezando.
-                            </p>
-                            <br>
-                            <div class="progress" style="height: 3em;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 50%">50%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+    </div>
