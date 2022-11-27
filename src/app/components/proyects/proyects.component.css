@@ -1,9 +1,34 @@
-.container.is-narrow {
-    max-width: 1200px;
+h1{
+    text-align: center;
 }
-.container {
-    flex-grow: 1;
-    margin: 0 auto;
-    position: relative;
-    width: auto;
+
+a{
+    font-size: 1em;
 }
+
+a:hover{
+    color: green;
+    font-size: 1.10em;
+}
+
+img{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+}
+
+
+
+
+
+
+
+

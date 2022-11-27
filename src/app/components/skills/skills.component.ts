@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscriber } from 'rxjs';
 import { DatosService } from 'src/app/servicios/datos.service';
 
 @Component({
@@ -10,6 +9,7 @@ import { DatosService } from 'src/app/servicios/datos.service';
 
 export class SkillsComponent implements OnInit {
   skills: any = [];
+  
   constructor(private datos: DatosService) { }
 
   ngOnInit(): void {

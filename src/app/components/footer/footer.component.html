@@ -4,17 +4,16 @@
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Instagram -->
-            <a class="ig footer btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/eznievv/"
-                role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="ig footer btn btn-outline-light btn-floating m-1" [href]="instagram" role="button"
+                target="_blank"><i class="fab fa-instagram"></i></a>
 
             <!-- Linkedin -->
-            <a class="lk footer btn btn-outline-light btn-floating m-1"
-                href="https://www.linkedin.com/in/nieva-ezequiel/" role="button" target="_blank">
+            <a class="lk footer btn btn-outline-light btn-floating m-1" [href]="linkedin" role="button" target="_blank">
                 <i class="fab fa-linkedin-in"></i></a>
 
             <!-- Github -->
-            <a class="github footer btn btn-outline-light btn-floating m-1" href="https://github.com/EzNiev"
-                role="button" target="_blank">
+            <a class="github footer btn btn-outline-light btn-floating m-1" [href]="github" role="button"
+                target="_blank">
                 <i class="fab fa-github"></i></a>
         </section>
         <!-- Section: Social media -->
@@ -24,7 +23,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2022 Copyright:
-        <a class="text-white" href="#navbar navbar-dark bg-darkblue" target="_blank">Ezequiel Nieva</a>
+        <a class="text-white" [href]="linkedin" target="_blank">{{nombre}}</a>
     </div>
     <!-- Copyright -->
 </footer>

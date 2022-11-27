@@ -6,7 +6,7 @@
     "linkedin": "https://www.linkedin.com/in/nieva-ezequiel/",
     "github": "https://github.com/EzNiev",
     
-    "fotoperfil": "../assets/img/Foto_perfil.jpeg",
+    "fotoperfil": "../assets/img/fotoEZE.png",
     "aboutme": "En proceso de aprendizaje de programación. Tengo conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática tanto software como hardware.",
     "rutacv": "../assets/files/CVNievaEzequiel_2022.pdf",
         
@@ -187,27 +187,30 @@
     "proyects":[
         {
             "id": 1,
-            "titulo": "",
-            "imagen": "",
-            "alt": "",
-            "descripcion": "",
-            "link": ""
+            "titulo": "Pagina sobre Fernet: estática con HTML y CSS (sin bootstrap)",
+            "descripcion": "Primer página realizada, aplicando solamente HTML y CSS sin bootstrap, aplicando todo lo aprendido sobre html, con hoovers, links externos e internos, una navbar fija para poder ir cambiando de seccion sin necesidad de scrollear y otras funciones. Si bien al día de hoy veo que hay muchas mejoras que le podría hacer prefiero dejar el proyecto como está para ir notando mi progreso.",
+            "link": "https://github.com/EzNiev/Fernet",
+            "site": "Repositorio GitHub",
+            "imagen": "../assets/img/proyectofernet/fernet1.png",
+            "alt": "Fernet 1"
         },
         {
             "id": 2,
-            "titulo": "",
-            "imagen": "",
-            "alt": "",
-            "descripcion": "",
-            "link": ""
+            "titulo": "Portfolio Estático: realizado con HTML y CSS (con bootstrap)",
+            "descripcion": "Primera versión de mi portfolio, en este caso es la version hardcodeada ya que solamente utilice HTML, CSS y bootstrap, como el anterior proyecto le veo muchas cosas a mejorar sin embargo prefiero dejarlo así para poder ver la diferencia con mis futuros proyectos y analizar mi progreso.",
+            "link": "https://ezniev.github.io/index.html",
+            "site": "GitHub Pages",
+            "imagen": "../assets/img/portfolioestatico.png",
+            "alt": "PortfolioEstatico"
         },
         {
             "id": 3,
-            "titulo": "",
-            "imagen": "",
-            "alt": "",
-            "descripcion": "",
-            "link": ""
+            "titulo": "Portfolio Angular: realizado con HTML, CSS, BootStrap y Angular",
+            "descripcion": "Segunda versión de mi portfolio, en este caso es la versión que estoy desarrollando, utilizando todo lo aplicado en proyectos anteriores pero implementandolo con Angular, trabajando con componentes, módulos, routing, imports, exports, servicios y demás herramientas que provee Angular.",
+            "link": "https://github.com/EzNiev/Portfolio-Angular",
+            "site": "Repositorio GitHub",
+            "imagen": "../assets/img/portfolioestatico.png",
+            "alt": "PortfolioEstatico"
         }
     ]
 }

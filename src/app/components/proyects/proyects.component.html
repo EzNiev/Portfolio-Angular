@@ -1,12 +1,14 @@
 <div class="row">
     <h1>Proyectos realizados</h1>
-    <div class="container">
+    <div class="container" *ngFor="let proyecto of proyectos">
         <div>
-            <h1>Pagina estática con HTML y CSS</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus mollitia facere nobis eum repellendus cumque. Assumenda nam libero ipsa eum aperiam, temporibus, minima culpa cupiditate hic, a animi maxime.</p>
+            <h3>{{proyecto.titulo}}</h3>
+            <h4>Ver proyecto en <a [href]="proyecto.link" target="_blank"><strong>{{proyecto.site}}</strong></a></h4>
+            <p>{{proyecto.descripcion}}</p>
+
         </div>
         <div>
-            
+            <a [href]="proyecto.link" target="_blank"><img [src]="proyecto.imagen" class="img-fluid" [alt]="proyecto.alt"></a>
         </div>
     </div>
 
