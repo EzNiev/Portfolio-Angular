@@ -1,26 +1,71 @@
-<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Inicio de sesión</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Usuario / Correo</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ingresar</button>
-            </div>
-        </div>
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" formControlName="email" />
     </div>
+
+    <!-- Validador de mail -->
+    <div *ngIf="Mail?.errors && Mail?.touched">
+        <!-- Validador de requerimiento -->
+        <p *ngIf="Mail?.hasError('required')" class="error">
+            El email es requerido.
+        </p>
+        <!-- Validador de formatos -->
+        <p *ngIf="Mail?.hasError('email')" class="error">
+            El formato del email debe ser válido.
+        </p>
+    </div>
+    <br />
+
+    <div>
+        <label for="usuario">Usuario: </label>
+        <input type="usuario" formControlName="usuario" />
+    </div>
+
+    <!-- Validarores de usuarios -->
+    <div *ngIf="Usuario?.errors && Usuario?.touched">
+        <!-- Validador de requerimiento -->
+        <p *ngIf="Usuario?.hasError('required')" class="error">
+            El usuario es requerido.
+        </p>
+        <!-- Validador de formatos minimo de caracteres -->
+        <p *ngIf="Usuario?.hasError('minlength')" class="error">
+            El usuario debe contener al menos 5 caracteres.
+        </p>
+        <!-- Validador de formatos maximo de caracteres -->
+        <p *ngIf="Usuario?.hasError('maxlenght')" class="error">
+            El usuario debe contener como maximo 12 caracteres.
+        </p>
+    </div>
+
+    <br />
+    <div>
+        <label for="exampleInputPassword1" class="form-label">Password: </label>
+        <input type="password" formControlName="password" [class.border-danger]="MailValid" />
+    </div>
+
+    <!-- Validadores de password -->
+    <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="error">
+            El password es requerido.
+        </p>
+        <p *ngIf="Password?.hasError('minlength')" class="error">
+            El password debe ser de 8 o más caracteres.
+        </p>
+    </div>
+    <br />
+    <div>
+        <button type="submit">Iniciar Sesión</button>
+    </div>
+</form>
+
+<div>
+    <p>
+        Un debuger para mostrar que es posible hacer un biding directo al formulario
+        <strong>{{ form.value.email }} </strong><strong>{{ form.value.password }} </strong>
+    </p>
+
+    <p>
+        <br />
+    </p>
 </div>
