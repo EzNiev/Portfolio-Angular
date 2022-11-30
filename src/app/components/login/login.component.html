@@ -12,7 +12,7 @@
             <!-- Ingreso de email-->
             <label for="email" class="form-label">Email</label>
             <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
+              aria-describedby="emailHelp" [class.border-danger]="MailValid">
             <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie</div>
           </div>
           <!-- Validador de mail -->
@@ -31,15 +31,16 @@
           <!-- Ingreso de contraseña -->
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" [class.border-danger]="MailValid">
+            <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1"
+              [class.border-danger]="MailValid">
           </div>
           <!-- Validadores de password -->
           <div *ngIf="Password?.errors && Password?.touched">
             <p *ngIf="Password?.hasError('required')" class="error">
-              El password es requerido.
+              La contraseña es requerida.
             </p>
             <p *ngIf="Password?.hasError('minlength')" class="error">
-              El password debe contener 8 o más caracteres.
+              La contraseña debe contener 8 o más caracteres.
             </p>
           </div>
 
