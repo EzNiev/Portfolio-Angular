@@ -1,26 +1,56 @@
 <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Inicio de sesión</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Usuario / Correo</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ingresar</button>
-        </div>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inicio de sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+          <div class="mb-3">
+
+            <!-- Ingreso de email-->
+            <label for="email" class="form-label">Email</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie</div>
+          </div>
+          <!-- Validador de mail -->
+          <div *ngIf="Mail?.errors && Mail?.touched">
+            <!-- Validador de requerimiento -->
+            <p *ngIf="Mail?.hasError('required')" class="error">
+              El email es requerido.
+            </p>
+            <!-- Validador de formatos -->
+            <p *ngIf="Mail?.hasError('email')" class="error">
+              El formato del email debe ser válido.
+            </p>
+          </div>
+          <br />
+
+          <!-- Ingreso de contraseña -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" [class.border-danger]="MailValid">
+          </div>
+          <!-- Validadores de password -->
+          <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="error">
+              El password es requerido.
+            </p>
+            <p *ngIf="Password?.hasError('minlength')" class="error">
+              El password debe contener 8 o más caracteres.
+            </p>
+          </div>
+
+          <!-- Boton Submit, que siempre debe estar dentro del formulario-->
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ingresar</button>
+          </div>
+
+        </form>
+
       </div>
     </div>
   </div>
+</div>
