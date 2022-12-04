@@ -1,0 +1,216 @@
+{
+    "nombre": "Nieva Gabriel Ezequiel",
+    "posicion": "Desarrollador FullStack Junior",
+    "edad": 24,
+    "instagram": "https://www.instagram.com/eznievv/",
+    "linkedin": "https://www.linkedin.com/in/nieva-ezequiel/",
+    "github": "https://github.com/EzNiev",
+    
+    "fotoperfil": "../assets/img/fotoEZE.png",
+    "aboutme": "En proceso de aprendizaje de programación. Tengo conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática tanto software como hardware.",
+    "rutacv": "../assets/files/CVNievaEzequiel_2022.pdf",
+        
+
+    "experiencias":[
+        {
+            "id": 1,
+            "logo": "../assets/img/logogade2.png",
+            "altimg": "Logo Gade",
+            "puesto": "Encargado de depósito",
+            "modalidad": "Presencial/Partime",
+            "empresa": "GADE Electricidad",
+            "inicio": "06/2016",
+            "fin": "12/2016",
+            "ubicacion": "Jesús María, Córdoba, Argentina",
+            "descripcion": "Mi primera experiencia formal de trabajo, a la cual accedí gracias a las pasantías estudiantiles y seguí trabajando hasta fin de año desarrollándome en atención al cliente y depósito, siendo este último donde trabajé más tiempo. Mis tareas eran organizar los productos, controlar ingresos y egresos, controlar el stock y mantener el lugar de trabajo en condiciones de limpieza y seguridad."
+        },
+        {
+            "id": 2,
+            "logo": "../assets/img/Logo-Servitech.png",
+            "altimg": "Logo ServiTech",
+            "puesto": "Técnico/Emprendedor",
+            "modalidad": "Presencial/Fulltime",
+            "empresa": "ServiTech Nueva",
+            "inicio": "07/2017",
+            "fin": "01/2021",
+            "ubicacion": "Córdoba, Argentina",
+            "descripcion": "Ofrecía servicio técnico de computadoras y notebooks de forma independiente. Con el tiempo obtuve conocimientos en el área, habilidades para tratar con clientes y administré mi negocio desde cero mediante mis propios medios promocionando mi trabajo por redes sociales y recomendaciones de mis propios clientes."
+        },
+        {
+            "id": 3,
+            "logo": "../assets/img/logo-apex.png",
+            "altimg": "Logo Apex",
+            "puesto": "Asesor atención al cliente/Mentor",
+            "modalidad": "Semipresencial/Jornada Parcial",
+            "empresa": "Apex América BPO",
+            "inicio": "12/2020",
+            "fin": "11/2021",
+            "ubicacion": "Córdoba, Córdoba, Argentina",
+            "descripcion": "Asesor telefónico en una cuenta de retención en una prestadora de servicios de telecomunicaciones. Desde Junio también trabajé como Mentor (auxiliar de capacitaciones) en los procesos de capacitaciones de nuevos ingresos a la empresa, ayudando en todo lo que corresponda a mejorar el proceso de aprendizaje brindando material multimedia y también mediante asesoramiento técnico cuando corresponda."
+        },
+        {
+            "id": 4,
+            "logo": "../assets/img/Maiden.jpg",
+            "altimg": "Logo Maiden",
+            "puesto": "Encargado de proveeduría",
+            "modalidad": "Presencial/Fulltime",
+            "empresa": "MAIDEN Eventos",
+            "inicio": "12/2021",
+            "fin": "11/2022",
+            "ubicacion": "Córdoba, Córdoba, Argentina",
+            "descripcion": "Actualmente soy encargado de la proveeduría, la misma funciona como Bar, Cantina y Salón de eventos. Entre mis tareas se encuentran como principales: Encargado de RRHH(Confección de cronogramas, redacción de informes, control de ingreso y egreso de personal, auxiliar de reclutamiento), Encargado de compras/deposito (Pedidos a proveedores, control de ingreso y egreso de mercadería, control de stock de mercadería en salón y depósito), Encargado de caja (Apertura, cierre y arqueo de caja, redacción balances de rendiciones semanales y mensuales, y redacción balance general), Organizador de eventos (Encargado de reservas del salón y coordinación de servicios complementarios al evento)."
+        }
+    ],
+
+    "estudios": [
+        {
+            "id": 1,
+            "institucion": "Argentina Programa - INTI",
+            "titulo": "Primera Etapa SeProgramar, Programación informática",
+            "periodo": "mar. 2022 - may. 2022",
+            "descripcion": "Actividades y grupos: Cursado online en plataforma Mumuki, de manera individual. Aprobé la primera etapa del curso, de duración de 3 meses, lo logré completa en 2 meses ya que el mismo siendo un curso introductorio a la programación. En el mismo repasé programación básica, reforcé JavaScript y mejoré mi entendimiento de POO con Ruby.",
+            "imagen": "../assets/img/LogoAP2.png",
+            "alt": "Logo Argentina Programa"
+        },
+        {
+            "id": 2,
+            "institucion": "Udemy",
+            "titulo": "Machine Learning: Data Science en Python, Programación informática",
+            "periodo": "dic. 2020 - dic. 2022",
+            "descripcion": "Estoy cursando en modalidad online el curso de Data Science ya que es una de las especialidades que me interesan, ya que combina dos cosas que me gusta, las estadísticas y la programación. Lo mejor de todo es que es en un lenguaje conocido, Python, el cual fue el primer lenguaje que vi en la Universidad.",
+            "imagen": "../assets/img/udemylogo.png",
+            "alt": "Logo Udemy"
+        },
+        {
+            "id": 3,
+            "institucion": "Argentina Programa - INTI",
+            "titulo": "Desarrollador Web Full-Stack , Desarrollo de aplicaciones web",
+            "periodo": "jul. 2022 - ene. 2023",
+            "descripcion": "Actualmente estoy cursando la segunda etapa del curso. En ésta etapa voy a estar profundizando mis conocimientos y adquiriendo las habilidades y herramientas necesarias para convertirme en programador web full-stack junior, reforzando tecnologías como: GitHub, Html, Css, Javascript, Angular, bases de datos, POO, e incorporando otras como: JSP, Servlets, Sockets, Spring Boot, APIs, y conceptos de Ciberseguridad.",
+            "imagen": "../assets/img/LogoAP2.png",
+            "alt": "Logo Argentina Programa"
+        },
+        {
+            "id": 4,
+            "institucion": "Universidad Tecnológica Nacional - FRC",
+            "titulo": "Ingeniería, Análisis de sistemas informáticos/Analista",
+            "periodo": "2019 - actual",
+            "descripcion": "Este año retomé mis estudios, terminando materias de segundo año, ya que tengo intenciones de orientarme en Inteligencia Artificial y Ciencia de Datos. Entre los conocimientos que adquirí en la carrera hasta ahora destaco Python, aplicado en Algoritmos y Estructura de Datos.",
+            "imagen": "../assets/img/logo-utn.jfif",
+            "alt": "Logo UTN"
+        }
+    ],
+
+    "skills":[
+        {
+            "id": 1,
+            "titulo": "HTML",
+            "descripcion": "Aprendí HTML a la par de CSS con mis primeros cursos, considero que tengo buen dominio del mismo ya que llevo tiempo usandolo.",
+            "imagen": "../assets/img/html5-logo.png",
+            "alt": "Logo HTML",
+            "porcentaje": 100,
+            "estiloporc": "width: 100%"
+        },
+        {
+            "id": 2,
+            "titulo": "CSS",
+            "descripcion": "Aprendí CSS a la par de HTML con mis primeros cursos, no soy especialista en el manejo de este lenguaje ya que no es mi fuerte la parte del diseño, si bien lo manejo no me interesa especializarme en el mismo sino más en lenguajes para trabajar las partes lógicas.",
+            "imagen": "../assets/img/Logo-css.png",
+            "alt": "Logo CSS",
+            "porcentaje": 80,
+            "estiloporc": "width: 80%"
+        },
+        {
+            "id": 3,
+            "titulo": "JavaScript",
+            "descripcion": "Buen manejo en general, en varios cursos e inclusive en la facultad lo aprendí, lo apliqué tanto para programación algoritmica y de estructura de datos como para POO. ",
+            "imagen": "../assets/img/js-logo.png",
+            "alt": "Logo Javascript",
+            "porcentaje": 80,
+            "estiloporc": "width: 80%"
+        },
+        {
+            "id": 4,
+            "titulo": "Angular",
+            "descripcion": "Tengo buen entendimiento de Angular, me gusta mucho como herramienta, aprendí sobre componentes, modulos, routing, expresiones, pipes, data binding, directivas, servicios, formularios, CLI, templates, archivos json, plantillas y sesiones de usuario utilizando servicios de validaciones.",
+            "imagen": "../assets/img/logo-angular.png",
+            "alt": "Logo Angular",
+            "porcentaje": 90,
+            "estiloporc": "width: 90%"
+        },
+        {
+            "id": 5,
+            "titulo": "BootStrap",
+            "descripcion": "BootStrap lo utilice por primera vez cuando armé mi portfolio con diseño estático y me gusto mucho la herramienta, si bien lo uso hace mucho no tiene tanta complejidad, es muy sencillo de aprender a usar por lo tanto considero que tengo dominio del mismo.",
+            "imagen": "../assets/img/logo-bootstrap.png",
+            "alt": "Logo BootStrap",
+            "porcentaje": 100,
+            "estiloporc": "width: 100%"
+        },
+        {
+            "id": 6,
+            "titulo": "Visual Studio Code",
+            "descripcion": "Mi editor favorito, si bien manejo otros editores de código VSC es el más práctico para mí, es el que uso desde que empecé a programar y tengo muy buen dominio del mismo.",
+            "imagen": "../assets/img/logo-vsc.png",
+            "alt": "",
+            "porcentaje": 100,
+            "estiloporc": "width: 100%"
+        },
+        {
+            "id": 7,
+            "titulo": "GitHub",
+            "descripcion": "No fue hasta el curso de Argentina Programa que lo entendí bien y pude aprovecharlo, tengo buen manejo del sistema combinando su version de escritorio en diferentes maquinas. También tengo algunos proyectos subidos a GitHub Pages.",
+            "imagen": "../assets/img/logogithub.png",
+            "alt": "Logo GitHub",
+            "porcentaje": 100,
+            "estiloporc": "width: 100%"
+        },
+        {
+            "id": 8,
+            "titulo": "TypeScript",
+            "descripcion": "Lo estoy aplicando por primera vez en mi proyecto de portfolio, trabajando con su tipificación para aplicarlo mediante POO creando clases, o mediante conceptos como instancias, agregacion, composicion, abstraccion, modularidad, y decoradores.",
+            "imagen": "../assets/img/logo-typescript.png",
+            "alt": "Logo TypeScript",
+            "porcentaje": 80,
+            "estiloporc": "width: 80%"
+        },
+        {
+            "id": 9,
+            "titulo": "Python",
+            "descripcion": "Python es el primer lenguaje que aprendí en la UTN aplicandolo en Algoritmos Y Estructura de Datos y luego con cursos mediante la POO con Pycharm, es mi lenguaje favorito y pienso especializarme en el mismo. No considero tener un completo conocimiento del mismo ya que sus aplicaciones son muy extensas pero si me siento cómodo trabajando con el mismo.",
+            "imagen": "../assets/img/logo-python.png",
+            "alt": "Logo Python",
+            "porcentaje": 80,
+            "estiloporc": "width: 80%"
+        }
+    ],
+    "proyects":[
+        {
+            "id": 1,
+            "titulo": "Pagina sobre Fernet: estática con HTML y CSS (sin bootstrap)",
+            "descripcion": "Primer página realizada, aplicando solamente HTML y CSS sin bootstrap, aplicando todo lo aprendido sobre html, con hoovers, links externos e internos, una navbar fija para poder ir cambiando de seccion sin necesidad de scrollear y otras funciones. Si bien al día de hoy veo que hay muchas mejoras que le podría hacer prefiero dejar el proyecto como está para ir notando mi progreso.",
+            "link": "https://github.com/EzNiev/Fernet",
+            "site": "Repositorio GitHub",
+            "imagen": "../assets/img/proyectofernet/fernet1.png",
+            "alt": "Fernet 1"
+        },
+        {
+            "id": 2,
+            "titulo": "Portfolio Estático: realizado con HTML y CSS (con bootstrap)",
+            "descripcion": "Primera versión de mi portfolio, en este caso es la version hardcodeada ya que solamente utilice HTML, CSS y bootstrap, como el anterior proyecto le veo muchas cosas a mejorar sin embargo prefiero dejarlo así para poder ver la diferencia con mis futuros proyectos y analizar mi progreso.",
+            "link": "https://ezniev.github.io/index.html",
+            "site": "GitHub Pages",
+            "imagen": "../assets/img/portfolioestatico.png",
+            "alt": "PortfolioEstatico"
+        },
+        {
+            "id": 3,
+            "titulo": "Portfolio Angular: realizado con HTML, CSS, BootStrap y Angular",
+            "descripcion": "Segunda versión de mi portfolio, en este caso es la versión que estoy desarrollando, utilizando todo lo aplicado en proyectos anteriores pero implementandolo con Angular, trabajando con componentes, módulos, routing, imports, exports, servicios y demás herramientas que provee Angular.",
+            "link": "https://github.com/EzNiev/Portfolio-Angular",
+            "site": "Repositorio GitHub",
+            "imagen": "../assets/img/portfolioestatico.png",
+            "alt": "PortfolioEstatico"
+        }
+    ]
+}
