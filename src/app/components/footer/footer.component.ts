@@ -7,19 +7,13 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  instagram: string = '';
-  github: string = '';
-  linkedin: string = '';
-  nombre: string = '';
+  ezequiel : any = [];
 
   constructor(private datos: DatosService) { }
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(data => {
-      this.instagram = data.instagram;
-      this.github = data.github;
-      this.linkedin = data.linkedin;
-      this.nombre = data.nombre;
+      this.ezequiel = data.datoseze;
     })
   }
 }

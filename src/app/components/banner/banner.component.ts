@@ -7,18 +7,14 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit{
-  //Dato simpre string de la base de datos
-  posicion: string = '';
-  //Dato simpre string de la base de datos
-  nombre: string = '';
+  ezequiel : any = [];
   
   //armo el constructor, creo el alias y traigo las cosas
   constructor(private datos:DatosService) { }
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(data => {
-      this.posicion = data.posicion;
-      this.nombre = data.nombre;
+      this.ezequiel = data.datoseze;
     })
   }
 }

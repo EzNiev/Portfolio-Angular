@@ -1,17 +1,17 @@
 {
-    "nombre": "Nieva Gabriel Ezequiel",
-    "posicion": "Desarrollador FullStack Junior",
-    "edad": 24,
-    "instagram": "https://www.instagram.com/eznievv/",
-    "linkedin": "https://www.linkedin.com/in/nieva-ezequiel/",
-    "github": "https://github.com/EzNiev",
-    
-    "fotoperfil": "../assets/img/fotoEZE.png",
-    "aboutme": "En proceso de aprendizaje de programación. Tengo conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática tanto software como hardware.",
-    "rutacv": "../assets/files/CVNievaEzequiel_2022.pdf",
-        
+    "datoseze": {
+        "nombre": "Nieva Gabriel Ezequiel",
+        "posicion": "Desarrollador FullStack Junior",
+        "edad": 24,
+        "instagram": "https://www.instagram.com/eznievv/",
+        "linkedin": "https://www.linkedin.com/in/nieva-ezequiel/",
+        "github": "https://github.com/EzNiev",
+        "fotoperfil": "../assets/img/fotoEZE.png",
+        "aboutme": "En proceso de aprendizaje de programación. Tengo conocimientos en ciencias básicas, administración de negocios, manejo de equipos de trabajo e informática tanto software como hardware.",
+        "rutacv": "../assets/files/CVNievaEzequiel_2022.pdf"
+    },
 
-    "experiencias":[
+    "experiencias": [
         {
             "id": 1,
             "logo": "../assets/img/logogade2.png",
@@ -61,7 +61,6 @@
             "descripcion": "Actualmente soy encargado de la proveeduría, la misma funciona como Bar, Cantina y Salón de eventos. Entre mis tareas se encuentran como principales: Encargado de RRHH(Confección de cronogramas, redacción de informes, control de ingreso y egreso de personal, auxiliar de reclutamiento), Encargado de compras/deposito (Pedidos a proveedores, control de ingreso y egreso de mercadería, control de stock de mercadería en salón y depósito), Encargado de caja (Apertura, cierre y arqueo de caja, redacción balances de rendiciones semanales y mensuales, y redacción balance general), Organizador de eventos (Encargado de reservas del salón y coordinación de servicios complementarios al evento)."
         }
     ],
-
     "estudios": [
         {
             "id": 1,
@@ -100,8 +99,7 @@
             "alt": "Logo UTN"
         }
     ],
-
-    "skills":[
+    "skills": [
         {
             "id": 1,
             "titulo": "HTML",
@@ -184,7 +182,7 @@
             "estiloporc": "width: 80%"
         }
     ],
-    "proyects":[
+    "proyects": [
         {
             "id": 1,
             "titulo": "Pagina sobre Fernet: estática con HTML y CSS (sin bootstrap)",

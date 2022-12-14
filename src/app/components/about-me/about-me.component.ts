@@ -8,19 +8,13 @@ import { DatosService } from 'src/app/servicios/datos.service';
 })
 
 export class AboutMeComponent implements OnInit {
-  posicion: string = '';
-  aboutme: string = '';
-  fotoperfil: any = [];
-  rutacv: string = '';
+  ezequiel: any = []; 
 
   constructor(private datos: DatosService) { }
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(data => {
-      this.posicion = data.posicion;
-      this.aboutme = data.aboutme;
-      this.fotoperfil = data.fotoperfil;
-      this.rutacv = data.rutacv;
+      this.ezequiel = data.datoseze;
     })
   }
 }

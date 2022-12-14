@@ -12,16 +12,12 @@ export class ExperienciaComponent implements OnInit{
   //Entonces para hacer esto instancio la variable trabajos(forma de referirme al array de trabajos) y despues me sirve para usarla para trabajar con esos datos
   experienciasa: any =[];
   
-  //Dato simpre string de la base de datos
-  nombre: string = '';
-  
   //armo el constructor, creo el alias y traigo las cosas
   constructor(private datos:DatosService) { }
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(data => {
       this.experienciasa = data.experiencias;
-      this.nombre = data.nombre;
     })
   }
 }
