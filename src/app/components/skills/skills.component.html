@@ -1,26 +1,26 @@
 <section id="skills" class="skills mt-5">
     <div class="container">
-        <h1 class="text-center">Hard & Soft Skills</h1>
+        <h1 class="text-center mb-3">Hard & Soft Skills</h1>
         <!-- Creamos el ngfor para traer el array con la data de los skills -->
         <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-            <div class="card mb-3 row justify-content-center justify-content-md-start"
-                style="max-width: 30vw; padding: 1em; margin: 1em;" *ngFor="let skill of skills">
+            <div class="card mb-3 "
+                style="width: 33vw; min-width: 25em; max-height: 50vh; padding: 1em; margin: 1%;" *ngFor="let skill of skills">
                 <!-- Inicio de componente carta -->
                 <div class="row g-0">
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <!-- Usamos data binding para traer el src y el alt de nuestra imagen -->
-                        <img [src]="skill.imagen" class="img-fluid rounded-start" [alt]="skill.alt">
+                        <img [src]="skill.imagen" class="img-fluid justify-content-center" style="height: 10vh; width: 9vw; margin: 10%;" [alt]="skill.alt">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-10">
                         <div class="card-body">
                             <div class="container">
-                                <h5 class="card-title" style="text-align: center">{{skill.titulo}}</h5>
-                                <p class="card-text" style="text-align: justify;">
+                                <h5 class="card-title" style="text-align: start; font-size: 1.8vh;">{{skill.titulo}}</h5>
+                                <p class="card-text" style="text-align: justify; font-size: 1.3vh;">
                                     {{skill.descripcion}}
                                 </p>
                                 <br>
                             </div>
-                            <div id="progressbar" class="progress " style="height: 3em">
+                            <div id="progressbar" class="progress justify-content-center justify-content-md-start" style="height: 3em">
                                 <!-- Para la progress bar tuve que crear dos datos en cada elemento del array
                                         Uno para el número que va en la barra y otro para la "Cantidad de relleno" de la barra
                                         por eso en la etiqueta del div en donde pone [style] utilizo databinding para completar ese dato
