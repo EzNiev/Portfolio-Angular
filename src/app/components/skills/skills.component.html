@@ -25,9 +25,9 @@
                                         Uno para el número que va en la barra y otro para la "Cantidad de relleno" de la barra
                                         por eso en la etiqueta del div en donde pone [style] utilizo databinding para completar ese dato
                                         no se si es la mejor forma pero es lo que pude arreglar y me funcionó por ahora-->
-                                <div class="progress-bar progress-bar-striped progress-bar-animated  "
+                                <div class="progress-bar progress-bar-striped progress-bar-animated"
                                     role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100" [style]="skill.estiloporc">
+                                    aria-valuemin="0" aria-valuemax="100" style= "width:{{skill.porcentaje}}%">
                                     {{skill.porcentaje}}%
                                 </div>
                             </div>
