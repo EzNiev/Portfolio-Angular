@@ -18,6 +18,12 @@ import { Page404Component } from './components/page404/page404.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { ModalAboutmeComponent } from './modales/modal-aboutme/modal-aboutme/modal-aboutme.component';
+import { ModalEducacionComponent } from './modales/modal-educacion/modal-educacion/modal-educacion.component';
+import { ModalExperienciasComponent } from './modales/modal-experiencias/modal-experiencias/modal-experiencias.component';
+import { ModalLoginComponent } from './modales/modal-login/modal-login/modal-login.component';
+import { ModalProyectsComponent } from './modales/modal-proyects/modal-proyects/modal-proyects.component';
+import { ModalSkillsComponent } from './modales/modal-skills/modal-skills/modal-skills.component';
 
 @NgModule({
     declarations: [
@@ -35,6 +41,12 @@ import { BannerComponent } from './components/banner/banner.component';
         ProyectsComponent,
         AboutMeComponent,
         BannerComponent,
+        ModalAboutmeComponent,
+        ModalEducacionComponent,
+        ModalExperienciasComponent,
+        ModalLoginComponent,
+        ModalProyectsComponent,
+        ModalSkillsComponent,
     ],
     imports: [
         BrowserModule,

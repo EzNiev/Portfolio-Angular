@@ -1,14 +1,16 @@
 <section id="experiencia" class="experiencia mt-5">
     <div class="container">
         <h1 class="text-center" style="color: white;">Experiencia</h1>
-
+        <div>
+            <button type="submit" class="btn btn-close-white"><i data-bs-toggle="modal" data-bs-target="#LoginModal" class="fa-solid fa-plus"></i></button>
+        </div>
         <div class="row" *ngFor="let experiencia of experiencias">
             <div class="card mb-3" style="max-width: 90vw;">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img [src]= "experiencia.logo" class="img-fluid rounded-start" [alt]= "experiencia.logo">
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-9">
                         <div class="card-body">
                             <h5 class="card-title"><strong>Titulo del puesto: </strong>{{experiencia.puesto}}</h5>
                             <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong>{{experiencia.modalidad}}</h6>
@@ -16,6 +18,8 @@
                             <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>{{experiencia.inicio}} - {{experiencia.fin}}</h6>
                             <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>{{experiencia.ubicacion}}</h6>
                             <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium"><strong>Descripción del puesto: </strong><br>{{experiencia.descripcion}}</p>
+                            <button type="button" class="btn btn-close-black"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>

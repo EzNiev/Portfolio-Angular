@@ -1,5 +1,7 @@
 <div class="row">
     <h1>Proyectos realizados</h1>
+    <button type="submit" class="btn btn-close-black"><i data-bs-toggle="modal" data-bs-target="#LoginModal"
+            class="fa-solid fa-plus"></i></button>
     <div class="container" *ngFor="let proyecto of proyectos">
         <div>
             <h3>{{proyecto.titulo}}</h3>
@@ -8,8 +10,10 @@
 
         </div>
         <div>
-            <a [href]="proyecto.link" target="_blank"><img [src]="proyecto.imagen" class="img-fluid" [alt]="proyecto.alt"></a>
+            <a [href]="proyecto.link" target="_blank"><img [src]="proyecto.imagen" class="img-fluid"
+                    [alt]="proyecto.alt"></a>
         </div>
+        <button type="button" class="btn btn-close-black"><i class="fa-solid fa-pencil"></i></button>
+        <button type="submit" class="btn btn-close-black"><i class="fa-solid fa-trash-can"></i></button>
     </div>
-
 </div>
