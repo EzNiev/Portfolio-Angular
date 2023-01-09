@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DatosService } from 'src/app/servicios/datos.service';
+import { Datoseze } from 'src/app/model/datoseze';
+import { DatosezeService } from 'src/app/servicios/datoseze.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,14 +8,15 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  ezequiel : any = [];
-
-  constructor(private datos: DatosService) { }
+  ezequiel: Datoseze[]=[];
+  constructor(private SDatoseze: DatosezeService) { }
 
   ngOnInit(): void {
-    this.datos.getDatos().subscribe(data => {
-      this.ezequiel = data.datoseze;
-    })
+    this.cargarDatoseze();
+  }
+
+  cargarDatoseze():void{
+    this.SDatoseze.buscar().subscribe(data => {this.ezequiel=data});
   }
 }
 

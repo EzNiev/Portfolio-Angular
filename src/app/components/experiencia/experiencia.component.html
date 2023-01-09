@@ -2,7 +2,7 @@
     <div class="container">
         <h1 class="text-center" style="color: white;">Experiencia</h1>
 
-        <div class="row" *ngFor="let experiencia of experienciasa">
+        <div class="row" *ngFor="let experiencia of experiencias">
             <div class="card mb-3" style="max-width: 90vw;">
                 <div class="row g-0">
                     <div class="col-md-2">
@@ -13,7 +13,7 @@
                             <h5 class="card-title"><strong>Titulo del puesto: </strong>{{experiencia.puesto}}</h5>
                             <h6 class="card-title t-14 t-normal"><strong>Modalidad de trabajo: </strong>{{experiencia.modalidad}}</h6>
                             <h6 class="card-title t-14 t-normal"><strong>Empresa: </strong>{{experiencia.empresa}}</h6>
-                            <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>{{experiencia.inicio}} / {{experiencia.fin}}</h6>
+                            <h6 class="card-title t-14 t-normal t-black--light"><strong>Periodo: </strong>{{experiencia.inicio}} - {{experiencia.fin}}</h6>
                             <h6 class="card-title t-14 t-normal t-black--light"><strong>Ubicación: </strong>{{experiencia.ubicacion}}</h6>
                             <p class="card-text display-flex t-14 t-normal t-black" style="font-size: medium"><strong>Descripción del puesto: </strong><br>{{experiencia.descripcion}}</p>
                         </div>

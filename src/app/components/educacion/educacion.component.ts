@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DatosService } from 'src/app/servicios/datos.service';
+import { Estudios } from 'src/app/model/estudios';
+import { EstudiosService } from 'src/app/servicios/estudios.service';
 
 @Component({
   selector: 'app-educacion',
@@ -7,13 +8,15 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-  estudios: any = [];
+  estudios: Estudios[]=[];
 
-  constructor(private datos: DatosService) { }
+  constructor(private SEstudios: EstudiosService) { }
 
   ngOnInit(): void {
-    this.datos.getDatos().subscribe(data => {
-      this.estudios = data.estudios;
-    })
+    this.cargarEstudios();
+  }
+
+  cargarEstudios():void{
+    this.SEstudios.buscar().subscribe(data => {this.estudios=data});
   }
 }
