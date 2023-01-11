@@ -22,7 +22,10 @@ export class DatosezeService {
     return this.httpClient.post<any>(this.url + 'crear', datoseze);
   }
 
-  public editar(id:number): Observable<Datoseze> {
+  public editar(datoseze: Datoseze): Observable<Datoseze> {
+    return this.httpClient.post<any>(this.url + 'crear', datoseze);
+  }
+  public editarid(id:number): Observable<Datoseze> {
     return this.httpClient.put<any>(this.url + `editar/${id}`, Datoseze);
   }
 
