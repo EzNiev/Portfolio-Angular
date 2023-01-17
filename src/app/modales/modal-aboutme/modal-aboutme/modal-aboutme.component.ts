@@ -11,7 +11,7 @@ import { DatosezeService } from 'src/app/servicios/datoseze.service';
 })
 export class ModalAboutmeComponent implements OnInit {
   form: FormGroup;
-  datoseze: Datoseze=null;
+  datoseze: Datoseze=any[];
   constructor(private formBuilder: FormBuilder,
     private SDatoseze: DatosezeService,
     private activatedRoute: ActivatedRoute,
