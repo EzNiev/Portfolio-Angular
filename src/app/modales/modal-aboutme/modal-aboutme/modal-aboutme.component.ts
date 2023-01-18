@@ -11,7 +11,7 @@ import { DatosezeService } from 'src/app/servicios/datoseze.service';
 })
 export class ModalAboutmeComponent implements OnInit {
   form: FormGroup;
-  datoseze: Datoseze;
+  datoseze: Datoseze= new Datoseze("","",0,"","","","","","",0);
   constructor(private formBuilder: FormBuilder,
     private SDatoseze: DatosezeService,
     private activatedRoute: ActivatedRoute,
@@ -34,10 +34,11 @@ export class ModalAboutmeComponent implements OnInit {
     }
     ngOnInit(): void {
       const id = this.activatedRoute.snapshot.params['id'];
+      console.log(id);
       this.SDatoseze.ver(id).subscribe(data=>{this.datoseze=data;
       },err =>{
         alert("Error al cargar datos");
-        this.router.navigate(['']);
+        this.router.navigate(['/']);
       }
       )
     }
@@ -76,7 +77,7 @@ export class ModalAboutmeComponent implements OnInit {
         alert("Datos de Ezequiel Modificados");
         this.router.navigate(['']);
       }, err =>{
-        alert("Error al cargar datos");
+        alert("Error al editar datos");
         this.router.navigate(['']);
       }
       )

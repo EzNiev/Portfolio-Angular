@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="onEnviar($event)" name="datosezeForm" class="bg-white rounded p-5 seccion">
+<div class="container" *ngIf="datoseze">
 
     <div class=" modal-content">
         <div class="modal-header">
@@ -8,7 +8,9 @@
             </a>
         </div>
 
-        <div class="modal-body"> 
+        <form [formGroup]="form" (ngSubmit)="onUpdate()" name="datosezeForm" class="bg-white rounded p-5 seccion">
+            <div class="modal-body">
+
                 <!-- Ingreso de nombre-->
                 <input type="hidden" formControlName="id" [ngModel]="datoseze.id">
                 <div class="mb-3">
@@ -16,25 +18,19 @@
 
                     <input class="form-control" type="text" id="nombre" formControlName="nombre" id="nombre"
                         placeholder="Nombre nuevo" [ngModel]="datoseze.nombre"
-                        [ngClass]="{'is-invalid': Nombre.errors && Nombre.touched, 'isvalid': !Nombre.errors && !Nombre.touched}">
+                        [ngClass]="{'is-invalid': Nombre?.errors && Nombre?.touched, 'isvalid': !Nombre?.errors && !Nombre?.touched}">
 
-                    <div *ngIf="Nombre.errors && Nombre.touched" class="invalid-feedback">
-                        <div *ngIf="Nombre.errors['required']"> El nombre es requerido</div>
+                    <div *ngIf="Nombre?.errors && Nombre?.touched" class="invalid-feedback">
+                        El nombre es requerido
                     </div>
 
                 </div>
+                <!-- Boton Submit, que siempre debe estar dentro del formulario-->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btnLogin">Guardar Cambios</button>
+                </div>
 
-
-
-
-
-
-
-            <!-- Boton Submit, que siempre debe estar dentro del formulario-->
-            <div class="modal-footer">
-                <button type="submit" class="btn btnLogin">Guardar Cambios</button>
             </div>
-
-        </div>
+        </form>
     </div>
-</form>
+</div>
